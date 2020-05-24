@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Planai.xcodeproj">
+      location = "self:Brick-i.xcodeproj">
    </FileRef>
 </Workspace>

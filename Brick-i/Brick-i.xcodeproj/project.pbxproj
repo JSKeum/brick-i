@@ -7,66 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38A2E4AF2479357200074F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2E4AE2479357200074F04 /* AppDelegate.swift */; };
-		38A2E4B12479357200074F04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2E4B02479357200074F04 /* SceneDelegate.swift */; };
-		38A2E4B32479357200074F04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2E4B22479357200074F04 /* ViewController.swift */; };
-		38A2E4B62479357200074F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A2E4B42479357200074F04 /* Main.storyboard */; };
-		38A2E4B82479357600074F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A2E4B72479357600074F04 /* Assets.xcassets */; };
-		38A2E4BB2479357600074F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A2E4B92479357600074F04 /* LaunchScreen.storyboard */; };
-		38A2E4C62479357600074F04 /* PlanaiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2E4C52479357600074F04 /* PlanaiTests.swift */; };
-		38A2E4D12479357600074F04 /* PlanaiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A2E4D02479357600074F04 /* PlanaiUITests.swift */; };
+		38814551247AC82B00591023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814550247AC82B00591023 /* AppDelegate.swift */; };
+		38814553247AC82B00591023 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814552247AC82B00591023 /* SceneDelegate.swift */; };
+		38814555247AC82B00591023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814554247AC82B00591023 /* ViewController.swift */; };
+		38814558247AC82B00591023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38814556247AC82B00591023 /* Main.storyboard */; };
+		3881455A247AC82C00591023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38814559247AC82C00591023 /* Assets.xcassets */; };
+		3881455D247AC82C00591023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3881455B247AC82C00591023 /* LaunchScreen.storyboard */; };
+		38814568247AC82C00591023 /* Brick_iTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814567247AC82C00591023 /* Brick_iTests.swift */; };
+		38814573247AC82C00591023 /* Brick_iUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814572247AC82C00591023 /* Brick_iUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		38A2E4C22479357600074F04 /* PBXContainerItemProxy */ = {
+		38814564247AC82C00591023 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 38A2E4A32479357200074F04 /* Project object */;
+			containerPortal = 38814545247AC82B00591023 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 38A2E4AA2479357200074F04;
-			remoteInfo = Planai;
+			remoteGlobalIDString = 3881454C247AC82B00591023;
+			remoteInfo = "Brick-i";
 		};
-		38A2E4CD2479357600074F04 /* PBXContainerItemProxy */ = {
+		3881456F247AC82C00591023 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 38A2E4A32479357200074F04 /* Project object */;
+			containerPortal = 38814545247AC82B00591023 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 38A2E4AA2479357200074F04;
-			remoteInfo = Planai;
+			remoteGlobalIDString = 3881454C247AC82B00591023;
+			remoteInfo = "Brick-i";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		38A2E4AB2479357200074F04 /* Planai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planai.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		38A2E4AE2479357200074F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		38A2E4B02479357200074F04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		38A2E4B22479357200074F04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		38A2E4B52479357200074F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		38A2E4B72479357600074F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		38A2E4BA2479357600074F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		38A2E4BC2479357600074F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38A2E4C12479357600074F04 /* PlanaiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanaiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38A2E4C52479357600074F04 /* PlanaiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanaiTests.swift; sourceTree = "<group>"; };
-		38A2E4C72479357600074F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38A2E4CC2479357600074F04 /* PlanaiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanaiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38A2E4D02479357600074F04 /* PlanaiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanaiUITests.swift; sourceTree = "<group>"; };
-		38A2E4D22479357600074F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3881454D247AC82B00591023 /* Brick-i.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brick-i.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38814550247AC82B00591023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		38814552247AC82B00591023 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		38814554247AC82B00591023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		38814557247AC82B00591023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		38814559247AC82C00591023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3881455C247AC82C00591023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3881455E247AC82C00591023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38814563247AC82C00591023 /* Brick-iTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brick-iTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38814567247AC82C00591023 /* Brick_iTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brick_iTests.swift; sourceTree = "<group>"; };
+		38814569247AC82C00591023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3881456E247AC82C00591023 /* Brick-iUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brick-iUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38814572247AC82C00591023 /* Brick_iUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brick_iUITests.swift; sourceTree = "<group>"; };
+		38814574247AC82C00591023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38A2E4A82479357200074F04 /* Frameworks */ = {
+		3881454A247AC82B00591023 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A2E4BE2479357600074F04 /* Frameworks */ = {
+		38814560247AC82C00591023 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A2E4C92479357600074F04 /* Frameworks */ = {
+		3881456B247AC82C00591023 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,78 +76,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		38A2E4A22479357200074F04 = {
+		38814544247AC82B00591023 = {
 			isa = PBXGroup;
 			children = (
-				38A2E4AD2479357200074F04 /* Planai */,
-				38A2E4C42479357600074F04 /* PlanaiTests */,
-				38A2E4CF2479357600074F04 /* PlanaiUITests */,
-				38A2E4AC2479357200074F04 /* Products */,
+				3881454F247AC82B00591023 /* Brick-i */,
+				38814566247AC82C00591023 /* Brick-iTests */,
+				38814571247AC82C00591023 /* Brick-iUITests */,
+				3881454E247AC82B00591023 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		38A2E4AC2479357200074F04 /* Products */ = {
+		3881454E247AC82B00591023 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38A2E4AB2479357200074F04 /* Planai.app */,
-				38A2E4C12479357600074F04 /* PlanaiTests.xctest */,
-				38A2E4CC2479357600074F04 /* PlanaiUITests.xctest */,
+				3881454D247AC82B00591023 /* Brick-i.app */,
+				38814563247AC82C00591023 /* Brick-iTests.xctest */,
+				3881456E247AC82C00591023 /* Brick-iUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38A2E4AD2479357200074F04 /* Planai */ = {
+		3881454F247AC82B00591023 /* Brick-i */ = {
 			isa = PBXGroup;
 			children = (
-				38A2E4DF247935E800074F04 /* Controllers */,
-				38A2E4E0247935FA00074F04 /* Storyboards */,
-				38A2E4B72479357600074F04 /* Assets.xcassets */,
-				38A2E4DE247935CA00074F04 /* Supporting Files */,
-				38A2E4BC2479357600074F04 /* Info.plist */,
+				38814582247AC86900591023 /* Storyboards */,
+				38814581247AC85D00591023 /* Controllers */,
+				38814580247AC84300591023 /* Supporting Files */,
+				38814559247AC82C00591023 /* Assets.xcassets */,
+				3881455E247AC82C00591023 /* Info.plist */,
 			);
-			path = Planai;
+			path = "Brick-i";
 			sourceTree = "<group>";
 		};
-		38A2E4C42479357600074F04 /* PlanaiTests */ = {
+		38814566247AC82C00591023 /* Brick-iTests */ = {
 			isa = PBXGroup;
 			children = (
-				38A2E4C52479357600074F04 /* PlanaiTests.swift */,
-				38A2E4C72479357600074F04 /* Info.plist */,
+				38814567247AC82C00591023 /* Brick_iTests.swift */,
+				38814569247AC82C00591023 /* Info.plist */,
 			);
-			path = PlanaiTests;
+			path = "Brick-iTests";
 			sourceTree = "<group>";
 		};
-		38A2E4CF2479357600074F04 /* PlanaiUITests */ = {
+		38814571247AC82C00591023 /* Brick-iUITests */ = {
 			isa = PBXGroup;
 			children = (
-				38A2E4D02479357600074F04 /* PlanaiUITests.swift */,
-				38A2E4D22479357600074F04 /* Info.plist */,
+				38814572247AC82C00591023 /* Brick_iUITests.swift */,
+				38814574247AC82C00591023 /* Info.plist */,
 			);
-			path = PlanaiUITests;
+			path = "Brick-iUITests";
 			sourceTree = "<group>";
 		};
-		38A2E4DE247935CA00074F04 /* Supporting Files */ = {
+		38814580247AC84300591023 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				38A2E4AE2479357200074F04 /* AppDelegate.swift */,
-				38A2E4B02479357200074F04 /* SceneDelegate.swift */,
-				38A2E4B92479357600074F04 /* LaunchScreen.storyboard */,
+				38814550247AC82B00591023 /* AppDelegate.swift */,
+				38814552247AC82B00591023 /* SceneDelegate.swift */,
+				3881455B247AC82C00591023 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		38A2E4DF247935E800074F04 /* Controllers */ = {
+		38814581247AC85D00591023 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				38A2E4B22479357200074F04 /* ViewController.swift */,
+				38814554247AC82B00591023 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		38A2E4E0247935FA00074F04 /* Storyboards */ = {
+		38814582247AC86900591023 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				38A2E4B42479357200074F04 /* Main.storyboard */,
+				38814556247AC82B00591023 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -155,83 +155,83 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38A2E4AA2479357200074F04 /* Planai */ = {
+		3881454C247AC82B00591023 /* Brick-i */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38A2E4D52479357600074F04 /* Build configuration list for PBXNativeTarget "Planai" */;
+			buildConfigurationList = 38814577247AC82C00591023 /* Build configuration list for PBXNativeTarget "Brick-i" */;
 			buildPhases = (
-				38A2E4A72479357200074F04 /* Sources */,
-				38A2E4A82479357200074F04 /* Frameworks */,
-				38A2E4A92479357200074F04 /* Resources */,
+				38814549247AC82B00591023 /* Sources */,
+				3881454A247AC82B00591023 /* Frameworks */,
+				3881454B247AC82B00591023 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Planai;
-			productName = Planai;
-			productReference = 38A2E4AB2479357200074F04 /* Planai.app */;
+			name = "Brick-i";
+			productName = "Brick-i";
+			productReference = 3881454D247AC82B00591023 /* Brick-i.app */;
 			productType = "com.apple.product-type.application";
 		};
-		38A2E4C02479357600074F04 /* PlanaiTests */ = {
+		38814562247AC82C00591023 /* Brick-iTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38A2E4D82479357600074F04 /* Build configuration list for PBXNativeTarget "PlanaiTests" */;
+			buildConfigurationList = 3881457A247AC82C00591023 /* Build configuration list for PBXNativeTarget "Brick-iTests" */;
 			buildPhases = (
-				38A2E4BD2479357600074F04 /* Sources */,
-				38A2E4BE2479357600074F04 /* Frameworks */,
-				38A2E4BF2479357600074F04 /* Resources */,
+				3881455F247AC82C00591023 /* Sources */,
+				38814560247AC82C00591023 /* Frameworks */,
+				38814561247AC82C00591023 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				38A2E4C32479357600074F04 /* PBXTargetDependency */,
+				38814565247AC82C00591023 /* PBXTargetDependency */,
 			);
-			name = PlanaiTests;
-			productName = PlanaiTests;
-			productReference = 38A2E4C12479357600074F04 /* PlanaiTests.xctest */;
+			name = "Brick-iTests";
+			productName = "Brick-iTests";
+			productReference = 38814563247AC82C00591023 /* Brick-iTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		38A2E4CB2479357600074F04 /* PlanaiUITests */ = {
+		3881456D247AC82C00591023 /* Brick-iUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38A2E4DB2479357600074F04 /* Build configuration list for PBXNativeTarget "PlanaiUITests" */;
+			buildConfigurationList = 3881457D247AC82C00591023 /* Build configuration list for PBXNativeTarget "Brick-iUITests" */;
 			buildPhases = (
-				38A2E4C82479357600074F04 /* Sources */,
-				38A2E4C92479357600074F04 /* Frameworks */,
-				38A2E4CA2479357600074F04 /* Resources */,
+				3881456A247AC82C00591023 /* Sources */,
+				3881456B247AC82C00591023 /* Frameworks */,
+				3881456C247AC82C00591023 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				38A2E4CE2479357600074F04 /* PBXTargetDependency */,
+				38814570247AC82C00591023 /* PBXTargetDependency */,
 			);
-			name = PlanaiUITests;
-			productName = PlanaiUITests;
-			productReference = 38A2E4CC2479357600074F04 /* PlanaiUITests.xctest */;
+			name = "Brick-iUITests";
+			productName = "Brick-iUITests";
+			productReference = 3881456E247AC82C00591023 /* Brick-iUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		38A2E4A32479357200074F04 /* Project object */ = {
+		38814545247AC82B00591023 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = JSKeum;
 				TargetAttributes = {
-					38A2E4AA2479357200074F04 = {
+					3881454C247AC82B00591023 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
-					38A2E4C02479357600074F04 = {
+					38814562247AC82C00591023 = {
 						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = 38A2E4AA2479357200074F04;
+						TestTargetID = 3881454C247AC82B00591023;
 					};
-					38A2E4CB2479357600074F04 = {
+					3881456D247AC82C00591023 = {
 						CreatedOnToolsVersion = 11.4.1;
-						TestTargetID = 38A2E4AA2479357200074F04;
+						TestTargetID = 3881454C247AC82B00591023;
 					};
 				};
 			};
-			buildConfigurationList = 38A2E4A62479357200074F04 /* Build configuration list for PBXProject "Planai" */;
+			buildConfigurationList = 38814548247AC82B00591023 /* Build configuration list for PBXProject "Brick-i" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -239,37 +239,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 38A2E4A22479357200074F04;
-			productRefGroup = 38A2E4AC2479357200074F04 /* Products */;
+			mainGroup = 38814544247AC82B00591023;
+			productRefGroup = 3881454E247AC82B00591023 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				38A2E4AA2479357200074F04 /* Planai */,
-				38A2E4C02479357600074F04 /* PlanaiTests */,
-				38A2E4CB2479357600074F04 /* PlanaiUITests */,
+				3881454C247AC82B00591023 /* Brick-i */,
+				38814562247AC82C00591023 /* Brick-iTests */,
+				3881456D247AC82C00591023 /* Brick-iUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		38A2E4A92479357200074F04 /* Resources */ = {
+		3881454B247AC82B00591023 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A2E4BB2479357600074F04 /* LaunchScreen.storyboard in Resources */,
-				38A2E4B82479357600074F04 /* Assets.xcassets in Resources */,
-				38A2E4B62479357200074F04 /* Main.storyboard in Resources */,
+				3881455D247AC82C00591023 /* LaunchScreen.storyboard in Resources */,
+				3881455A247AC82C00591023 /* Assets.xcassets in Resources */,
+				38814558247AC82B00591023 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A2E4BF2479357600074F04 /* Resources */ = {
+		38814561247AC82C00591023 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A2E4CA2479357600074F04 /* Resources */ = {
+		3881456C247AC82C00591023 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,60 +279,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		38A2E4A72479357200074F04 /* Sources */ = {
+		38814549247AC82B00591023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A2E4B32479357200074F04 /* ViewController.swift in Sources */,
-				38A2E4AF2479357200074F04 /* AppDelegate.swift in Sources */,
-				38A2E4B12479357200074F04 /* SceneDelegate.swift in Sources */,
+				38814555247AC82B00591023 /* ViewController.swift in Sources */,
+				38814551247AC82B00591023 /* AppDelegate.swift in Sources */,
+				38814553247AC82B00591023 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A2E4BD2479357600074F04 /* Sources */ = {
+		3881455F247AC82C00591023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A2E4C62479357600074F04 /* PlanaiTests.swift in Sources */,
+				38814568247AC82C00591023 /* Brick_iTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A2E4C82479357600074F04 /* Sources */ = {
+		3881456A247AC82C00591023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A2E4D12479357600074F04 /* PlanaiUITests.swift in Sources */,
+				38814573247AC82C00591023 /* Brick_iUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		38A2E4C32479357600074F04 /* PBXTargetDependency */ = {
+		38814565247AC82C00591023 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 38A2E4AA2479357200074F04 /* Planai */;
-			targetProxy = 38A2E4C22479357600074F04 /* PBXContainerItemProxy */;
+			target = 3881454C247AC82B00591023 /* Brick-i */;
+			targetProxy = 38814564247AC82C00591023 /* PBXContainerItemProxy */;
 		};
-		38A2E4CE2479357600074F04 /* PBXTargetDependency */ = {
+		38814570247AC82C00591023 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 38A2E4AA2479357200074F04 /* Planai */;
-			targetProxy = 38A2E4CD2479357600074F04 /* PBXContainerItemProxy */;
+			target = 3881454C247AC82B00591023 /* Brick-i */;
+			targetProxy = 3881456F247AC82C00591023 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		38A2E4B42479357200074F04 /* Main.storyboard */ = {
+		38814556247AC82B00591023 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				38A2E4B52479357200074F04 /* Base */,
+				38814557247AC82B00591023 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		38A2E4B92479357600074F04 /* LaunchScreen.storyboard */ = {
+		3881455B247AC82C00591023 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				38A2E4BA2479357600074F04 /* Base */,
+				3881455C247AC82C00591023 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -340,7 +340,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		38A2E4D32479357600074F04 /* Debug */ = {
+		38814575247AC82C00591023 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -400,7 +400,7 @@
 			};
 			name = Debug;
 		};
-		38A2E4D42479357600074F04 /* Release */ = {
+		38814576247AC82C00591023 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -454,166 +454,166 @@
 			};
 			name = Release;
 		};
-		38A2E4D62479357600074F04 /* Debug */ = {
+		38814578247AC82C00591023 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M974BXPS92;
-				INFOPLIST_FILE = Planai/Info.plist;
+				INFOPLIST_FILE = "Brick-i/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Planai;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keumsong.Brick-i";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		38A2E4D72479357600074F04 /* Release */ = {
+		38814579247AC82C00591023 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M974BXPS92;
-				INFOPLIST_FILE = Planai/Info.plist;
+				INFOPLIST_FILE = "Brick-i/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Planai;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keumsong.Brick-i";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		38A2E4D92479357600074F04 /* Debug */ = {
+		3881457B247AC82C00591023 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M974BXPS92;
-				INFOPLIST_FILE = PlanaiTests/Info.plist;
+				INFOPLIST_FILE = "Brick-iTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PlanaiTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keumsong.Brick-iTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planai.app/Planai";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brick-i.app/Brick-i";
 			};
 			name = Debug;
 		};
-		38A2E4DA2479357600074F04 /* Release */ = {
+		3881457C247AC82C00591023 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M974BXPS92;
-				INFOPLIST_FILE = PlanaiTests/Info.plist;
+				INFOPLIST_FILE = "Brick-iTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PlanaiTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keumsong.Brick-iTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Planai.app/Planai";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brick-i.app/Brick-i";
 			};
 			name = Release;
 		};
-		38A2E4DC2479357600074F04 /* Debug */ = {
+		3881457E247AC82C00591023 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M974BXPS92;
-				INFOPLIST_FILE = PlanaiUITests/Info.plist;
+				INFOPLIST_FILE = "Brick-iUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PlanaiUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keumsong.Brick-iUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Planai;
+				TEST_TARGET_NAME = "Brick-i";
 			};
 			name = Debug;
 		};
-		38A2E4DD2479357600074F04 /* Release */ = {
+		3881457F247AC82C00591023 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M974BXPS92;
-				INFOPLIST_FILE = PlanaiUITests/Info.plist;
+				INFOPLIST_FILE = "Brick-iUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PlanaiUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keumsong.Brick-iUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Planai;
+				TEST_TARGET_NAME = "Brick-i";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38A2E4A62479357200074F04 /* Build configuration list for PBXProject "Planai" */ = {
+		38814548247AC82B00591023 /* Build configuration list for PBXProject "Brick-i" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38A2E4D32479357600074F04 /* Debug */,
-				38A2E4D42479357600074F04 /* Release */,
+				38814575247AC82C00591023 /* Debug */,
+				38814576247AC82C00591023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38A2E4D52479357600074F04 /* Build configuration list for PBXNativeTarget "Planai" */ = {
+		38814577247AC82C00591023 /* Build configuration list for PBXNativeTarget "Brick-i" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38A2E4D62479357600074F04 /* Debug */,
-				38A2E4D72479357600074F04 /* Release */,
+				38814578247AC82C00591023 /* Debug */,
+				38814579247AC82C00591023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38A2E4D82479357600074F04 /* Build configuration list for PBXNativeTarget "PlanaiTests" */ = {
+		3881457A247AC82C00591023 /* Build configuration list for PBXNativeTarget "Brick-iTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38A2E4D92479357600074F04 /* Debug */,
-				38A2E4DA2479357600074F04 /* Release */,
+				3881457B247AC82C00591023 /* Debug */,
+				3881457C247AC82C00591023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38A2E4DB2479357600074F04 /* Build configuration list for PBXNativeTarget "PlanaiUITests" */ = {
+		3881457D247AC82C00591023 /* Build configuration list for PBXNativeTarget "Brick-iUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38A2E4DC2479357600074F04 /* Debug */,
-				38A2E4DD2479357600074F04 /* Release */,
+				3881457E247AC82C00591023 /* Debug */,
+				3881457F247AC82C00591023 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 38A2E4A32479357200074F04 /* Project object */;
+	rootObject = 38814545247AC82B00591023 /* Project object */;
 }

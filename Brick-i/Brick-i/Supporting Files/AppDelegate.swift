@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Planai
+//  Brick-i
 //
-//  Created by JSKeum on 2020/05/23.
+//  Created by JSKeum on 2020/05/25.
 //  Copyright © 2020 JSKeum. All rights reserved.
 //
 

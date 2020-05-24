@@ -1,15 +1,15 @@
 //
-//  PlanaiTests.swift
-//  PlanaiTests
+//  Brick_iTests.swift
+//  Brick-iTests
 //
-//  Created by JSKeum on 2020/05/23.
+//  Created by JSKeum on 2020/05/25.
 //  Copyright © 2020 JSKeum. All rights reserved.
 //
 
 import XCTest
-@testable import Planai
+@testable import Brick_i
 
-class PlanaiTests: XCTestCase {
+class Brick_iTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
