@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3842E6832492735D008FEA53 /* Predict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842E6822492735D008FEA53 /* Predict.swift */; };
+		384AAFB0249236E500CD4A2D /* keumKNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */; };
 		38814551247AC82B00591023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814550247AC82B00591023 /* AppDelegate.swift */; };
 		38814553247AC82B00591023 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814552247AC82B00591023 /* SceneDelegate.swift */; };
 		38814555247AC82B00591023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814554247AC82B00591023 /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3842E6822492735D008FEA53 /* Predict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predict.swift; sourceTree = "<group>"; };
+		384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = keumKNN.mlmodel; sourceTree = "<group>"; };
 		3881454D247AC82B00591023 /* Brick-i.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brick-i.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38814550247AC82B00591023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38814552247AC82B00591023 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,11 +103,13 @@
 		3881454F247AC82B00591023 /* Brick-i */ = {
 			isa = PBXGroup;
 			children = (
+				384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */,
 				38814582247AC86900591023 /* Storyboards */,
 				38814581247AC85D00591023 /* Controllers */,
 				38814580247AC84300591023 /* Supporting Files */,
 				38814559247AC82C00591023 /* Assets.xcassets */,
 				3881455E247AC82C00591023 /* Info.plist */,
+				3842E6822492735D008FEA53 /* Predict.swift */,
 			);
 			path = "Brick-i";
 			sourceTree = "<group>";
@@ -283,6 +289,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3842E6832492735D008FEA53 /* Predict.swift in Sources */,
+				384AAFB0249236E500CD4A2D /* keumKNN.mlmodel in Sources */,
 				38814555247AC82B00591023 /* ViewController.swift in Sources */,
 				38814551247AC82B00591023 /* AppDelegate.swift in Sources */,
 				38814553247AC82B00591023 /* SceneDelegate.swift in Sources */,
