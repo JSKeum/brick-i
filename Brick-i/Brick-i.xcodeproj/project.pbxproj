@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3842E6832492735D008FEA53 /* Predict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842E6822492735D008FEA53 /* Predict.swift */; };
+		3842E68624929E11008FEA53 /* KeumKNN+ImageConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842E68524929E11008FEA53 /* KeumKNN+ImageConstraint.swift */; };
+		3842E6882492A057008FEA53 /* ModelUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842E6872492A057008FEA53 /* ModelUpdater.swift */; };
+		3842E68A2493434A008FEA53 /* HandskNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3842E68924934349008FEA53 /* HandskNN.mlmodel */; };
 		384AAFB0249236E500CD4A2D /* keumKNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */; };
 		38814551247AC82B00591023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814550247AC82B00591023 /* AppDelegate.swift */; };
 		38814553247AC82B00591023 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814552247AC82B00591023 /* SceneDelegate.swift */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		3842E6822492735D008FEA53 /* Predict.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predict.swift; sourceTree = "<group>"; };
+		3842E68524929E11008FEA53 /* KeumKNN+ImageConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeumKNN+ImageConstraint.swift"; sourceTree = "<group>"; };
+		3842E6872492A057008FEA53 /* ModelUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdater.swift; sourceTree = "<group>"; };
+		3842E68924934349008FEA53 /* HandskNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandskNN.mlmodel; sourceTree = "<group>"; };
 		384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = keumKNN.mlmodel; sourceTree = "<group>"; };
 		3881454D247AC82B00591023 /* Brick-i.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brick-i.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38814550247AC82B00591023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3842E68424929DD1008FEA53 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3842E6872492A057008FEA53 /* ModelUpdater.swift */,
+				3842E68524929E11008FEA53 /* KeumKNN+ImageConstraint.swift */,
+				384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */,
+				3842E68924934349008FEA53 /* HandskNN.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		38814544247AC82B00591023 = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +120,7 @@
 		3881454F247AC82B00591023 /* Brick-i */ = {
 			isa = PBXGroup;
 			children = (
-				384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */,
+				3842E68424929DD1008FEA53 /* Model */,
 				38814582247AC86900591023 /* Storyboards */,
 				38814581247AC85D00591023 /* Controllers */,
 				38814580247AC84300591023 /* Supporting Files */,
@@ -289,9 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3842E68624929E11008FEA53 /* KeumKNN+ImageConstraint.swift in Sources */,
+				3842E6882492A057008FEA53 /* ModelUpdater.swift in Sources */,
 				3842E6832492735D008FEA53 /* Predict.swift in Sources */,
 				384AAFB0249236E500CD4A2D /* keumKNN.mlmodel in Sources */,
 				38814555247AC82B00591023 /* ViewController.swift in Sources */,
+				3842E68A2493434A008FEA53 /* HandskNN.mlmodel in Sources */,
 				38814551247AC82B00591023 /* AppDelegate.swift in Sources */,
 				38814553247AC82B00591023 /* SceneDelegate.swift in Sources */,
 			);
