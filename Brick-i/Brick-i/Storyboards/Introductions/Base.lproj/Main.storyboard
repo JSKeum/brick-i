@@ -15,17 +15,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IntroFirst" translatesAutoresizingMaskIntoConstraints="NO" id="PYS-eC-egn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6p-GU-UDe">
-                                <rect key="frame" x="184" y="474" width="46" height="30"/>
+                                <rect key="frame" x="148" y="613" width="118" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.78442640480000003" green="0.94088820949999996" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="시작하기"/>
                                 <connections>
                                     <action selector="goToInputController:" destination="Lu5-VB-CVD" eventType="touchUpInside" id="TgR-fj-vNP"/>
-                                    <segue destination="P5v-kF-4iu" kind="show" id="8Ok-Xv-nJH"/>
+                                    <segue destination="RFA-wi-fIF" kind="show" id="Kcr-ip-ec7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PYS-eC-egn" secondAttribute="bottom" id="0IX-4S-vRt"/>
+                            <constraint firstAttribute="top" secondItem="PYS-eC-egn" secondAttribute="top" id="DoC-UV-biu"/>
+                            <constraint firstAttribute="trailing" secondItem="PYS-eC-egn" secondAttribute="trailing" id="Tdd-2p-3YA"/>
+                            <constraint firstAttribute="leading" secondItem="PYS-eC-egn" secondAttribute="leading" id="g6A-hH-VIu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vZ1-Au-DzW"/>
                     </view>
                     <navigationItem key="navigationItem" title="Brick-i" id="EPg-TK-iZe"/>
@@ -33,7 +44,108 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ywE-qG-2hu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Lu5-VB-CVD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-194.20289855072465" y="77.678571428571431"/>
+            <point key="canvasLocation" x="-294" y="78"/>
+        </scene>
+        <!--Brick-i 알려주기-->
+        <scene sceneID="Znc-45-uqp">
+            <objects>
+                <viewController id="RFA-wi-fIF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GlJ-cy-7hr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IntroSecond" translatesAutoresizingMaskIntoConstraints="NO" id="Yur-JJ-e0F">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMg-tp-ZXt">
+                                <rect key="frame" x="133" y="655" width="71" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78442640480000003" green="0.94088820949999996" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="네"/>
+                                <connections>
+                                    <segue destination="B7X-V5-XK6" kind="show" id="yJZ-qR-Ois"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yur-JJ-e0F" firstAttribute="bottom" secondItem="GlJ-cy-7hr" secondAttribute="bottom" id="1Tf-ES-UlU"/>
+                            <constraint firstAttribute="top" secondItem="Yur-JJ-e0F" secondAttribute="top" id="Cv8-NL-rMz"/>
+                            <constraint firstAttribute="leading" secondItem="Yur-JJ-e0F" secondAttribute="leading" id="McP-EN-BNd"/>
+                            <constraint firstItem="Yur-JJ-e0F" firstAttribute="trailing" secondItem="GlJ-cy-7hr" secondAttribute="trailing" id="yoO-OM-zxk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2wr-Io-ZYY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Brick-i 알려주기" id="BMl-P1-Bie"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efg-Si-W2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="523" y="598"/>
+        </scene>
+        <!--Brick-i 알려주기-->
+        <scene sceneID="Teh-Mc-DfD">
+            <objects>
+                <viewController id="B7X-V5-XK6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1cv-fQ-cS2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IntroThird" translatesAutoresizingMaskIntoConstraints="NO" id="Gg0-3Z-2u5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVh-9F-Peg">
+                                <rect key="frame" x="97" y="169" width="221" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.78442640480000003" green="0.94088820949999996" blue="0.96130555870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <state key="normal" title="다른 주제 고르기"/>
+                                <connections>
+                                    <segue destination="RlH-vS-OfF" kind="show" id="uNJ-nu-g7n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gg0-3Z-2u5" secondAttribute="trailing" id="2MS-QU-iaY"/>
+                            <constraint firstAttribute="bottom" secondItem="Gg0-3Z-2u5" secondAttribute="bottom" id="2l6-85-K45"/>
+                            <constraint firstAttribute="leading" secondItem="Gg0-3Z-2u5" secondAttribute="leading" id="INi-Or-dMy"/>
+                            <constraint firstAttribute="top" secondItem="Gg0-3Z-2u5" secondAttribute="top" id="PEI-P6-FkY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1uq-kn-ExD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Brick-i 알려주기" id="MEM-WH-N2e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oNE-fc-FQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1410" y="598"/>
+        </scene>
+        <!--주제 정하기-->
+        <scene sceneID="YBD-fS-DiU">
+            <objects>
+                <viewController id="RlH-vS-OfF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o7H-Hx-p1h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IntroThird-Themes" translatesAutoresizingMaskIntoConstraints="NO" id="jdQ-9u-miO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jdQ-9u-miO" secondAttribute="trailing" id="NMl-GF-53A"/>
+                            <constraint firstAttribute="leading" secondItem="jdQ-9u-miO" secondAttribute="leading" id="bFa-M5-Xml"/>
+                            <constraint firstAttribute="bottom" secondItem="jdQ-9u-miO" secondAttribute="bottom" id="l9K-Hh-VLn"/>
+                            <constraint firstAttribute="top" secondItem="jdQ-9u-miO" secondAttribute="top" id="ys0-hZ-ew0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2EX-j5-wdk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="주제 정하기" id="EqF-n2-iGb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5e-3r-KpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2212" y="598"/>
         </scene>
         <!--Intro View Controller-->
         <scene sceneID="MHq-m1-YIL">
@@ -60,55 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKE-Gu-LpK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576.81159420289862" y="72.991071428571431"/>
-        </scene>
-        <!--Input Image View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="InputImageViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ui-h1-EtO">
-                                <rect key="frame" x="181" y="481" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="사진찍기"/>
-                                <connections>
-                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="opi-Nt-yIy"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MLu-pX-9i2">
-                                <rect key="frame" x="80" y="149" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fyu-UE-CQM">
-                                <rect key="frame" x="190" y="558" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Train"/>
-                                <connections>
-                                    <action selector="training:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cnk-Xr-i4y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbP-Nn-YXD">
-                                <rect key="frame" x="88" y="552" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="predict"/>
-                                <connections>
-                                    <action selector="predict:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cbx-ja-mEG"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <connections>
-                        <outlet property="uploadImageView" destination="MLu-pX-9i2" id="Ksf-GY-tsa"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1415.9420289855072" y="77.678571428571431"/>
+            <point key="canvasLocation" x="2054" y="-102"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LY5-vV-a0d">
@@ -129,4 +193,10 @@
             <point key="canvasLocation" x="-1104.3478260869565" y="77.678571428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IntroFirst" width="828" height="1792"/>
+        <image name="IntroSecond" width="828" height="1792"/>
+        <image name="IntroThird" width="828" height="1792"/>
+        <image name="IntroThird-Themes" width="828" height="1792"/>
+    </resources>
 </document>
