@@ -150,8 +150,7 @@ class InputImageViewController: UIViewController, UIImagePickerControllerDelegat
             predictImage(image: img)
         }
     }
-    
-    
+
     
     func predictImage(image: UIImage) {
         

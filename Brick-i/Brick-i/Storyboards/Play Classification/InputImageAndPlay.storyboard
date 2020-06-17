@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mND-XP-LBd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dk3-fY-7WF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -54,21 +54,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5HO-yk-lhY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1542" y="663"/>
+            <point key="canvasLocation" x="2450.7246376811595" y="662.94642857142856"/>
         </scene>
-        <!--Input Image Table View Controller-->
+        <!--Brick-i 알려주기-->
         <scene sceneID="WNR-xv-Zw6">
             <objects>
                 <tableViewController storyboardIdentifier="InputImage" id="mND-XP-LBd" customClass="InputImageTableViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="xZ9-TK-Yri">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i2G-o4-sno">
-                            <rect key="frame" x="0.0" y="247.5" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                        </button>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesToBeData" rowHeight="174" id="tgO-19-uBG" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
                                 <rect key="frame" x="20" y="55.5" width="374" height="174"/>
@@ -109,14 +104,50 @@
                                     <outlet property="imageCollectionView" destination="Jfp-Ty-oJX" id="UAV-JO-DWt"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="AddNewImage" textLabel="PhS-Xk-j6V" rowHeight="59" style="IBUITableViewCellStyleDefault" id="FXw-9y-M2K" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
+                                <rect key="frame" x="20" y="229.5" width="374" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FXw-9y-M2K" id="lTM-oJ-EAi">
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="새 동물 추가하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PhS-Xk-j6V">
+                                            <rect key="frame" x="20" y="0.0" width="302" height="59"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="mND-XP-LBd" id="5eN-Jd-06S"/>
                             <outlet property="delegate" destination="mND-XP-LBd" id="TIQ-Ta-3BJ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Brick-i 알려주기" id="p5F-T3-uQ2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0Q-mo-xoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566.6666666666667" y="59.598214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2tf-N0-k2E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dk3-fY-7WF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UFQ-kK-EAR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mND-XP-LBd" kind="relationship" relationship="rootViewController" id="MUX-gL-Se2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgA-Xb-zp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="656.52173913043487" y="59.598214285714285"/>
         </scene>
