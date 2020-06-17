@@ -34,16 +34,18 @@ class ImagesToBeDataTableViewCell: UITableViewCell, UICollectionViewDelegate, UI
 
 extension ImagesToBeDataTableViewCell {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-           10
+           3
        }
        
        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageInput", for: indexPath)
             let imageView = UIImageView(image: UIImage(named: "IntroFirst"))
-        imageView.sizeToFit()
-        cell.addSubview(imageView)
+    
+        imageView.contentMode = .scaleAspectFit
+        cell.backgroundView = imageView
+
         
-         return cell
+        return cell
     }
           
 }
