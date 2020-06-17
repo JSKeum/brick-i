@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImagesToBeDataTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+class ImagesToBeDataTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,14 +30,31 @@ class ImagesToBeDataTableViewCell: UITableViewCell, UICollectionViewDelegate, UI
             imageCollectionView.layoutMargins = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
     }
+    
+    @IBAction func addImage(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        self.window?.rootViewController?.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    
 }
 
 extension ImagesToBeDataTableViewCell {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-           3
+           4
        }
        
        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if (indexPath.row == 3) {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AddImage", for: indexPath)
+            
+            return cell
+        } else
+        {
+        
            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageInput", for: indexPath)
             let imageView = UIImageView(image: UIImage(named: "IntroFirst"))
     
@@ -46,6 +63,7 @@ extension ImagesToBeDataTableViewCell {
 
         
         return cell
+    }
     }
           
 }
