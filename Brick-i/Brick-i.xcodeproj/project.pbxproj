@@ -14,12 +14,14 @@
 		384AAFB0249236E500CD4A2D /* keumKNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */; };
 		38814551247AC82B00591023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814550247AC82B00591023 /* AppDelegate.swift */; };
 		38814553247AC82B00591023 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814552247AC82B00591023 /* SceneDelegate.swift */; };
-		38814555247AC82B00591023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814554247AC82B00591023 /* ViewController.swift */; };
+		38814555247AC82B00591023 /* InputImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814554247AC82B00591023 /* InputImageViewController.swift */; };
 		38814558247AC82B00591023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38814556247AC82B00591023 /* Main.storyboard */; };
 		3881455A247AC82C00591023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38814559247AC82C00591023 /* Assets.xcassets */; };
 		3881455D247AC82C00591023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3881455B247AC82C00591023 /* LaunchScreen.storyboard */; };
 		38814568247AC82C00591023 /* Brick_iTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814567247AC82C00591023 /* Brick_iTests.swift */; };
 		38814573247AC82C00591023 /* Brick_iUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814572247AC82C00591023 /* Brick_iUITests.swift */; };
+		38BA8A312499E0D500172F8B /* InputImageAndPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BA8A302499E0D500172F8B /* InputImageAndPlay.storyboard */; };
+		38BA8A332499E3DE00172F8B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA8A322499E3DE00172F8B /* IntroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +50,7 @@
 		3881454D247AC82B00591023 /* Brick-i.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brick-i.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38814550247AC82B00591023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38814552247AC82B00591023 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		38814554247AC82B00591023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		38814554247AC82B00591023 /* InputImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputImageViewController.swift; sourceTree = "<group>"; };
 		38814557247AC82B00591023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38814559247AC82C00591023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3881455C247AC82C00591023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,8 @@
 		3881456E247AC82C00591023 /* Brick-iUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brick-iUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38814572247AC82C00591023 /* Brick_iUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brick_iUITests.swift; sourceTree = "<group>"; };
 		38814574247AC82C00591023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BA8A302499E0D500172F8B /* InputImageAndPlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputImageAndPlay.storyboard; sourceTree = "<group>"; };
+		38BA8A322499E3DE00172F8B /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +166,8 @@
 		38814581247AC85D00591023 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				38814554247AC82B00591023 /* ViewController.swift */,
+				38BA8A322499E3DE00172F8B /* IntroViewController.swift */,
+				38814554247AC82B00591023 /* InputImageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -170,9 +175,26 @@
 		38814582247AC86900591023 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				38814556247AC82B00591023 /* Main.storyboard */,
+				38BA8A2E2499DFF600172F8B /* Introductions */,
+				38BA8A2F2499E00600172F8B /* Play Classification */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		38BA8A2E2499DFF600172F8B /* Introductions */ = {
+			isa = PBXGroup;
+			children = (
+				38814556247AC82B00591023 /* Main.storyboard */,
+			);
+			path = Introductions;
+			sourceTree = "<group>";
+		};
+		38BA8A2F2499E00600172F8B /* Play Classification */ = {
+			isa = PBXGroup;
+			children = (
+				38BA8A302499E0D500172F8B /* InputImageAndPlay.storyboard */,
+			);
+			path = "Play Classification";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +304,7 @@
 				3881455D247AC82C00591023 /* LaunchScreen.storyboard in Resources */,
 				3881455A247AC82C00591023 /* Assets.xcassets in Resources */,
 				38814558247AC82B00591023 /* Main.storyboard in Resources */,
+				38BA8A312499E0D500172F8B /* InputImageAndPlay.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,11 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38BA8A332499E3DE00172F8B /* IntroViewController.swift in Sources */,
 				3842E68624929E11008FEA53 /* KeumKNN+ImageConstraint.swift in Sources */,
 				3842E6882492A057008FEA53 /* ModelUpdater.swift in Sources */,
 				3842E6832492735D008FEA53 /* Predict.swift in Sources */,
 				384AAFB0249236E500CD4A2D /* keumKNN.mlmodel in Sources */,
-				38814555247AC82B00591023 /* ViewController.swift in Sources */,
+				38814555247AC82B00591023 /* InputImageViewController.swift in Sources */,
 				3842E68A2493434A008FEA53 /* HandskNN.mlmodel in Sources */,
 				38814551247AC82B00591023 /* AppDelegate.swift in Sources */,
 				38814553247AC82B00591023 /* SceneDelegate.swift in Sources */,
