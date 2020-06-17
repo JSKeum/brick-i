@@ -23,6 +23,7 @@
 		38BA8A312499E0D500172F8B /* InputImageAndPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BA8A302499E0D500172F8B /* InputImageAndPlay.storyboard */; };
 		38BA8A332499E3DE00172F8B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA8A322499E3DE00172F8B /* IntroViewController.swift */; };
 		38BA8A352499F6FA00172F8B /* InputImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA8A342499F6FA00172F8B /* InputImageTableViewController.swift */; };
+		38BA8A382499FD5000172F8B /* ImagesToBeDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA8A372499FD5000172F8B /* ImagesToBeDataTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		38BA8A302499E0D500172F8B /* InputImageAndPlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputImageAndPlay.storyboard; sourceTree = "<group>"; };
 		38BA8A322499E3DE00172F8B /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		38BA8A342499F6FA00172F8B /* InputImageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputImageTableViewController.swift; sourceTree = "<group>"; };
+		38BA8A372499FD5000172F8B /* ImagesToBeDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesToBeDataTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				3842E68424929DD1008FEA53 /* Model */,
 				38814582247AC86900591023 /* Storyboards */,
 				38814581247AC85D00591023 /* Controllers */,
+				38BA8A362499FD2100172F8B /* Cells */,
 				38814580247AC84300591023 /* Supporting Files */,
 				38814559247AC82C00591023 /* Assets.xcassets */,
 				3881455E247AC82C00591023 /* Info.plist */,
@@ -198,6 +201,14 @@
 				38BA8A302499E0D500172F8B /* InputImageAndPlay.storyboard */,
 			);
 			path = "Play Classification";
+			sourceTree = "<group>";
+		};
+		38BA8A362499FD2100172F8B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				38BA8A372499FD5000172F8B /* ImagesToBeDataTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +347,7 @@
 				3842E68624929E11008FEA53 /* KeumKNN+ImageConstraint.swift in Sources */,
 				3842E6882492A057008FEA53 /* ModelUpdater.swift in Sources */,
 				3842E6832492735D008FEA53 /* Predict.swift in Sources */,
+				38BA8A382499FD5000172F8B /* ImagesToBeDataTableViewCell.swift in Sources */,
 				384AAFB0249236E500CD4A2D /* keumKNN.mlmodel in Sources */,
 				38814555247AC82B00591023 /* InputImageViewController.swift in Sources */,
 				3842E68A2493434A008FEA53 /* HandskNN.mlmodel in Sources */,

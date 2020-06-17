@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bUs-2s-Esz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mND-XP-LBd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Input Image View Controller-->
         <scene sceneID="Z6O-ao-Ne1">
             <objects>
-                <viewController storyboardIdentifier="InputImage" id="bUs-2s-Esz" customClass="InputImageViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bUs-2s-Esz" customClass="InputImageViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zPy-t8-LzT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,24 +54,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5HO-yk-lhY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-286" y="68"/>
+            <point key="canvasLocation" x="1542" y="663"/>
         </scene>
         <!--Input Image Table View Controller-->
         <scene sceneID="WNR-xv-Zw6">
             <objects>
-                <tableViewController id="mND-XP-LBd" customClass="InputImageTableViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="InputImage" id="mND-XP-LBd" customClass="InputImageTableViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="xZ9-TK-Yri">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="i2G-o4-sno">
+                            <rect key="frame" x="0.0" y="247.5" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                        </button>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tgO-19-uBG">
-                                <rect key="frame" x="20" y="55.5" width="374" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesToBeData" rowHeight="174" id="tgO-19-uBG" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
+                                <rect key="frame" x="20" y="55.5" width="374" height="174"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tgO-19-uBG" id="g8f-rQ-gZB">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="174"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jfp-Ty-oJX">
+                                            <rect key="frame" x="20" y="11" width="334" height="152"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GXD-0C-ZIp">
+                                                <size key="itemSize" width="128" height="128"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageInput" id="LQb-cv-qSK">
+                                                    <rect key="frame" x="0.0" y="12" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2zU-bC-sbk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </collectionViewCellContentView>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Jfp-Ty-oJX" secondAttribute="bottom" id="V2l-Dl-EXB"/>
+                                        <constraint firstItem="Jfp-Ty-oJX" firstAttribute="top" secondItem="g8f-rQ-gZB" secondAttribute="topMargin" id="hdg-BJ-BuL"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Jfp-Ty-oJX" secondAttribute="trailing" id="ibA-fc-XqN"/>
+                                        <constraint firstItem="Jfp-Ty-oJX" firstAttribute="leading" secondItem="g8f-rQ-gZB" secondAttribute="leadingMargin" id="q1w-1a-HRb"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageCollectionView" destination="Jfp-Ty-oJX" id="UAV-JO-DWt"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -81,7 +118,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0Q-mo-xoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="657" y="60"/>
+            <point key="canvasLocation" x="656.52173913043487" y="59.598214285714285"/>
         </scene>
     </scenes>
 </document>
