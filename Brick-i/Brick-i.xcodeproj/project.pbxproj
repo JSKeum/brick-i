@@ -22,6 +22,7 @@
 		38814573247AC82C00591023 /* Brick_iUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814572247AC82C00591023 /* Brick_iUITests.swift */; };
 		38BA8A312499E0D500172F8B /* InputImageAndPlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38BA8A302499E0D500172F8B /* InputImageAndPlay.storyboard */; };
 		38BA8A332499E3DE00172F8B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA8A322499E3DE00172F8B /* IntroViewController.swift */; };
+		38BA8A352499F6FA00172F8B /* InputImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA8A342499F6FA00172F8B /* InputImageTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		38814574247AC82C00591023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38BA8A302499E0D500172F8B /* InputImageAndPlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputImageAndPlay.storyboard; sourceTree = "<group>"; };
 		38BA8A322499E3DE00172F8B /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		38BA8A342499F6FA00172F8B /* InputImageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputImageTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				38BA8A322499E3DE00172F8B /* IntroViewController.swift */,
 				38814554247AC82B00591023 /* InputImageViewController.swift */,
+				38BA8A342499F6FA00172F8B /* InputImageTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				38814555247AC82B00591023 /* InputImageViewController.swift in Sources */,
 				3842E68A2493434A008FEA53 /* HandskNN.mlmodel in Sources */,
 				38814551247AC82B00591023 /* AppDelegate.swift in Sources */,
+				38BA8A352499F6FA00172F8B /* InputImageTableViewController.swift in Sources */,
 				38814553247AC82B00591023 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
