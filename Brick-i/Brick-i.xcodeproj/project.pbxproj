@@ -89,6 +89,7 @@
 		3842E68424929DD1008FEA53 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3842E6822492735D008FEA53 /* Predict.swift */,
 				3842E6872492A057008FEA53 /* ModelUpdater.swift */,
 				3842E68524929E11008FEA53 /* KeumKNN+ImageConstraint.swift */,
 				384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */,
@@ -126,7 +127,6 @@
 				38814580247AC84300591023 /* Supporting Files */,
 				38814559247AC82C00591023 /* Assets.xcassets */,
 				3881455E247AC82C00591023 /* Info.plist */,
-				3842E6822492735D008FEA53 /* Predict.swift */,
 			);
 			path = "Brick-i";
 			sourceTree = "<group>";
