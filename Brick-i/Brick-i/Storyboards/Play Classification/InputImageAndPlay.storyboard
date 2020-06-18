@@ -65,8 +65,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameOfType" rowHeight="59" id="g7u-u2-MV2" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
+                                <rect key="frame" x="20" y="55.5" width="374" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g7u-u2-MV2" id="el8-pN-u2j">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="동물" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1R-3U-r4H">
+                                            <rect key="frame" x="157.5" y="9" width="59" height="41"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="t1R-3U-r4H" firstAttribute="centerX" secondItem="el8-pN-u2j" secondAttribute="centerX" id="TRa-eQ-fsN"/>
+                                        <constraint firstItem="t1R-3U-r4H" firstAttribute="centerY" secondItem="el8-pN-u2j" secondAttribute="centerY" id="cah-9h-ccb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesToBeData" rowHeight="174" id="tgO-19-uBG" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
-                                <rect key="frame" x="20" y="55.5" width="374" height="174"/>
+                                <rect key="frame" x="20" y="114.5" width="374" height="174"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tgO-19-uBG" id="g8f-rQ-gZB">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="174"/>
@@ -97,10 +119,11 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dr-GK-iuB">
-                                                                <rect key="frame" x="41" y="49" width="46" height="30"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dr-GK-iuB">
+                                                                <rect key="frame" x="37" y="42" width="51" height="45"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
                                                                 <connections>
                                                                     <action selector="addImage:" destination="tgO-19-uBG" eventType="touchUpInside" id="MaX-Hj-HfB"/>
                                                                 </connections>
@@ -123,7 +146,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="AddNewImage" textLabel="PhS-Xk-j6V" rowHeight="59" style="IBUITableViewCellStyleDefault" id="FXw-9y-M2K" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
-                                <rect key="frame" x="20" y="229.5" width="374" height="59"/>
+                                <rect key="frame" x="20" y="288.5" width="374" height="59"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FXw-9y-M2K" id="lTM-oJ-EAi">
                                     <rect key="frame" x="0.0" y="0.0" width="330" height="59"/>
@@ -156,8 +179,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dk3-fY-7WF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UFQ-kK-EAR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UFQ-kK-EAR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -170,4 +193,7 @@
             <point key="canvasLocation" x="656.52173913043487" y="59.598214285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

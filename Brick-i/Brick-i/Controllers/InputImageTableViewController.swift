@@ -20,6 +20,7 @@ class InputImageTableViewController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
     
     var numOfImageClaases = 3
@@ -38,11 +39,19 @@ class InputImageTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let firstTableIndex = 0
         
-        if (indexPath.section == numOfSections - 1) {
+        if (indexPath.section == firstTableIndex) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "nameOfType", for: indexPath)
+            
+            
+            cell.textLabel?.layer.masksToBounds = true
+            cell.textLabel?.layer.cornerRadius = 5
+            return cell
+        } else if (indexPath.section == numOfSections - 1) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AddNewImage", for: indexPath)
             return cell
-        }
+        } else {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ImagesToBeData", for: indexPath)
         
@@ -52,13 +61,14 @@ class InputImageTableViewController: UITableViewController {
         // Configure the cell...Colle
         
         return cell
+            }
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) ->  CGFloat {
+        if (indexPath.section == 0) { return 50}
+        else if (indexPath.section == numOfSections - 1) { return 60 }
         
-        if (indexPath.section == numOfSections - 1) { return 60 }
-        
-        return 120
+        else { return 120 }
     }
     
 //    override func tableView(_ tableView: UITableView, titleForHeaderInSection
@@ -76,7 +86,8 @@ class InputImageTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
-
+        
+        if (section == 0) { return nil }
         if (section == numOfSections - 1) { return nil }
         
 //        label.backgroundColor = .white
@@ -101,4 +112,6 @@ extension InputImageTableViewController {
 //        bottomView.addSubview(uiLabel)
 //        self.navigationController?.view.addSubview(bottomView)
     }
+    
+    
 }
