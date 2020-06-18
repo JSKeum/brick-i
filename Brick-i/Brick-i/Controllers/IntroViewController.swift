@@ -17,6 +17,10 @@ class IntroViewController: UIViewController {
     }
     
     @IBAction func goToInputController(_ sender: Any) {
+        
+    }
+    
+    @IBAction func goToInPutCV(_ sender: Any) {
         let storyboard = UIStoryboard(name: "InputImageAndPlay", bundle: nil)
         
         let viewController = storyboard.instantiateViewController(withIdentifier: "InputImage")

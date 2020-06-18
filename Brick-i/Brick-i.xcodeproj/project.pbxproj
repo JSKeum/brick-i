@@ -11,6 +11,8 @@
 		3842E68624929E11008FEA53 /* KeumKNN+ImageConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842E68524929E11008FEA53 /* KeumKNN+ImageConstraint.swift */; };
 		3842E6882492A057008FEA53 /* ModelUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842E6872492A057008FEA53 /* ModelUpdater.swift */; };
 		3842E68A2493434A008FEA53 /* HandskNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3842E68924934349008FEA53 /* HandskNN.mlmodel */; };
+		3846DC3B249B6E6D00CCD6B6 /* PlayWtihBrickI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3846DC3A249B6E6D00CCD6B6 /* PlayWtihBrickI.storyboard */; };
+		3846DC3D249B713400CCD6B6 /* StartPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3846DC3C249B713400CCD6B6 /* StartPlayViewController.swift */; };
 		384AAFB0249236E500CD4A2D /* keumKNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */; };
 		38814551247AC82B00591023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814550247AC82B00591023 /* AppDelegate.swift */; };
 		38814553247AC82B00591023 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38814552247AC82B00591023 /* SceneDelegate.swift */; };
@@ -48,6 +50,8 @@
 		3842E68524929E11008FEA53 /* KeumKNN+ImageConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeumKNN+ImageConstraint.swift"; sourceTree = "<group>"; };
 		3842E6872492A057008FEA53 /* ModelUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUpdater.swift; sourceTree = "<group>"; };
 		3842E68924934349008FEA53 /* HandskNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HandskNN.mlmodel; sourceTree = "<group>"; };
+		3846DC3A249B6E6D00CCD6B6 /* PlayWtihBrickI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlayWtihBrickI.storyboard; sourceTree = "<group>"; };
+		3846DC3C249B713400CCD6B6 /* StartPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPlayViewController.swift; sourceTree = "<group>"; };
 		384AAFAF249236E500CD4A2D /* keumKNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = keumKNN.mlmodel; sourceTree = "<group>"; };
 		3881454D247AC82B00591023 /* Brick-i.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Brick-i.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38814550247AC82B00591023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 				38BA8A322499E3DE00172F8B /* IntroViewController.swift */,
 				38814554247AC82B00591023 /* InputImageViewController.swift */,
 				38BA8A342499F6FA00172F8B /* InputImageTableViewController.swift */,
+				3846DC3C249B713400CCD6B6 /* StartPlayViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				38BA8A302499E0D500172F8B /* InputImageAndPlay.storyboard */,
+				3846DC3A249B6E6D00CCD6B6 /* PlayWtihBrickI.storyboard */,
 			);
 			path = "Play Classification";
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				3881455D247AC82C00591023 /* LaunchScreen.storyboard in Resources */,
 				3881455A247AC82C00591023 /* Assets.xcassets in Resources */,
 				38814558247AC82B00591023 /* Main.storyboard in Resources */,
+				3846DC3B249B6E6D00CCD6B6 /* PlayWtihBrickI.storyboard in Resources */,
 				38BA8A312499E0D500172F8B /* InputImageAndPlay.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +357,7 @@
 				38BA8A382499FD5000172F8B /* ImagesToBeDataTableViewCell.swift in Sources */,
 				384AAFB0249236E500CD4A2D /* keumKNN.mlmodel in Sources */,
 				38814555247AC82B00591023 /* InputImageViewController.swift in Sources */,
+				3846DC3D249B713400CCD6B6 /* StartPlayViewController.swift in Sources */,
 				3842E68A2493434A008FEA53 /* HandskNN.mlmodel in Sources */,
 				38814551247AC82B00591023 /* AppDelegate.swift in Sources */,
 				38BA8A352499F6FA00172F8B /* InputImageTableViewController.swift in Sources */,

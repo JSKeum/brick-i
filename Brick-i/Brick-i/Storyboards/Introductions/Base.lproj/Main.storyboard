@@ -234,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKE-Gu-LpK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2054" y="-102"/>
+            <point key="canvasLocation" x="2910" y="1310"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LY5-vV-a0d">
@@ -258,7 +258,7 @@
         <!--Take Photo-->
         <scene sceneID="7E7-GR-Ugd">
             <objects>
-                <viewController title="Take Photo" id="p0O-LP-yaq" sceneMemberID="viewController">
+                <viewController title="Take Photo" id="p0O-LP-yaq" customClass="IntroViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RBG-RG-hCM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,7 +271,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="takephoto"/>
                                 <connections>
-                                    <segue destination="whm-hA-BHg" kind="show" id="Qtw-VL-s7J"/>
+                                    <action selector="goToInPutCV:" destination="p0O-LP-yaq" eventType="touchUpInside" id="DUl-nS-av7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -312,18 +312,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdJ-LR-e3i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2983" y="1291"/>
+            <point key="canvasLocation" x="3799" y="1290"/>
         </scene>
         <!--start quiz-->
         <scene sceneID="hjX-IY-6oL">
             <objects>
                 <viewController title="start quiz" id="whm-hA-BHg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kHh-hc-Jcg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back5" translatesAutoresizingMaskIntoConstraints="NO" id="NCa-3x-sTn">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0e-aV-xFF">
                                 <rect key="frame" x="38" y="715" width="338" height="67"/>
@@ -354,11 +354,11 @@
             <objects>
                 <viewController id="jq9-PO-Q3i" userLabel="Quiz Scene" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nsE-KK-dda">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back7" translatesAutoresizingMaskIntoConstraints="NO" id="2HG-Pl-TJ7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-Lb-ilG">
                                 <rect key="frame" x="64" y="777" width="132" height="61"/>
@@ -402,11 +402,11 @@
             <objects>
                 <viewController title="Wrong Result 1" id="yy3-N0-pQS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hGe-UF-ewA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back10" translatesAutoresizingMaskIntoConstraints="NO" id="O1w-hz-tfl">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNr-Hk-HDR">
                                 <rect key="frame" x="64" y="777" width="132" height="61"/>
@@ -447,7 +447,7 @@
             <objects>
                 <viewController title="Wrong Result 2" id="VVR-cr-HBu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ych-nP-Je0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zqX-tw-XXL">
@@ -477,11 +477,11 @@
             <objects>
                 <viewController title="Right Result 1" id="4rG-IO-jfh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zTB-NV-4J1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back8" translatesAutoresizingMaskIntoConstraints="NO" id="FbK-kN-2eQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x56-3z-W3t">
                                 <rect key="frame" x="64" y="777" width="132" height="61"/>
@@ -520,7 +520,7 @@
             <objects>
                 <viewController title="Right Result 2" id="3EK-qC-js5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3M8-Xf-klb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4E6-Xv-gpz">
@@ -552,8 +552,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Qtw-VL-s7J"/>
+        <segue reference="aXI-cV-H2E"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="animal" width="125" height="120"/>
         <image name="back10" width="414" height="896"/>

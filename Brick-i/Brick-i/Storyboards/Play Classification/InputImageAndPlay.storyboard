@@ -63,7 +63,6 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="xZ9-TK-Yri">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameOfType" rowHeight="59" id="g7u-u2-MV2" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
                                 <rect key="frame" x="20" y="55.5" width="374" height="59"/>
@@ -72,20 +71,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="동물" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1R-3U-r4H">
-                                            <rect key="frame" x="157.5" y="9" width="59" height="41"/>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Crs-sj-BH3">
+                                            <rect key="frame" x="127.5" y="1.5" width="119" height="56"/>
+                                            <state key="normal" backgroundImage="animalbox"/>
+                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="t1R-3U-r4H" firstAttribute="centerX" secondItem="el8-pN-u2j" secondAttribute="centerX" id="TRa-eQ-fsN"/>
-                                        <constraint firstItem="t1R-3U-r4H" firstAttribute="centerY" secondItem="el8-pN-u2j" secondAttribute="centerY" id="cah-9h-ccb"/>
+                                        <constraint firstItem="Crs-sj-BH3" firstAttribute="centerX" secondItem="el8-pN-u2j" secondAttribute="centerX" id="17B-tk-GhS"/>
+                                        <constraint firstItem="Crs-sj-BH3" firstAttribute="centerY" secondItem="el8-pN-u2j" secondAttribute="centerY" id="2nG-2L-urb"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesToBeData" rowHeight="174" id="tgO-19-uBG" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
                                 <rect key="frame" x="20" y="114.5" width="374" height="174"/>
@@ -119,16 +115,19 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dr-GK-iuB">
-                                                                <rect key="frame" x="37" y="42" width="51" height="45"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dr-GK-iuB">
+                                                                <rect key="frame" x="41.5" y="41.5" width="45" height="45"/>
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
+                                                                <state key="normal" backgroundImage="addBtn"/>
                                                                 <connections>
                                                                     <action selector="addImage:" destination="tgO-19-uBG" eventType="touchUpInside" id="MaX-Hj-HfB"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="7Dr-GK-iuB" firstAttribute="centerX" secondItem="hMB-p3-ZYg" secondAttribute="centerX" id="fpB-75-du7"/>
+                                                            <constraint firstItem="7Dr-GK-iuB" firstAttribute="centerY" secondItem="hMB-p3-ZYg" secondAttribute="centerY" id="oTp-N2-GES"/>
+                                                        </constraints>
                                                     </collectionViewCellContentView>
                                                 </collectionViewCell>
                                             </cells>
@@ -145,11 +144,11 @@
                                     <outlet property="imageCollectionView" destination="Jfp-Ty-oJX" id="UAV-JO-DWt"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="AddNewImage" rowHeight="59" id="FXw-9y-M2K" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddNewImage" rowHeight="59" id="FXw-9y-M2K" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
                                 <rect key="frame" x="20" y="288.5" width="374" height="59"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FXw-9y-M2K" id="lTM-oJ-EAi">
-                                    <rect key="frame" x="0.0" y="0.0" width="330" height="59"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gk-kg-gm2">
@@ -162,6 +161,15 @@
                                                 <action selector="addNewGroup:" destination="mND-XP-LBd" eventType="touchUpInside" id="huw-9m-ajZ"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie7-fR-Urz">
+                                            <rect key="frame" x="330" y="13" width="35" height="35"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                            <state key="normal" backgroundImage="addBtn"/>
+                                            <connections>
+                                                <action selector="addNewGroup:" destination="mND-XP-LBd" eventType="touchUpInside" id="Fjd-xA-YAg"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="9Gk-kg-gm2" secondAttribute="bottom" constant="5" id="0UG-Ui-2xU"/>
@@ -169,6 +177,28 @@
                                         <constraint firstItem="9Gk-kg-gm2" firstAttribute="top" secondItem="lTM-oJ-EAi" secondAttribute="topMargin" constant="5" id="QcX-g2-iOy"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Finish" rowHeight="59" id="nU8-6V-Frx" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
+                                <rect key="frame" x="20" y="347.5" width="374" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nU8-6V-Frx" id="otm-EF-auF">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qc9-Lx-69u">
+                                            <rect key="frame" x="-0.5" y="-2" width="375" height="63"/>
+                                            <state key="normal" backgroundImage="done"/>
+                                            <connections>
+                                                <action selector="connectToPlay:" destination="mND-XP-LBd" eventType="touchUpInside" id="WAv-HU-9vx"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Qc9-Lx-69u" firstAttribute="centerX" secondItem="otm-EF-auF" secondAttribute="centerX" id="G3W-6B-VXf"/>
+                                        <constraint firstItem="Qc9-Lx-69u" firstAttribute="centerY" secondItem="otm-EF-auF" secondAttribute="centerY" id="GQd-68-g11"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.2784313725" green="0.2784313725" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -202,6 +232,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="addBtn" width="45" height="45"/>
+        <image name="animalbox" width="119" height="56"/>
+        <image name="done" width="375" height="63"/>
     </resources>
 </document>

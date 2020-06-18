@@ -12,10 +12,32 @@ class ImagesToBeDataTableViewCell: UITableViewCell, UICollectionViewDelegate, UI
     
     var images: [UIImage] = []
     
+    var imagePicker: UIImagePickerController?
+    
+    var initialImage: UIImage?
+    
+    func initImage() {
+//        self.imageCollectionView.performBatchUpdates({
+        if let image = initialImage {
+            images += [image]
+        }
+        imageCollectionView.reloadData()
+//        }, completion: nil)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        imagePicker = UIImagePickerController()
+        imagePicker?.sourceType = .camera
+        imagePicker?.delegate = self
+        
+//        if let image = initialImage {
+//            images += [image]
+//        }
     }
+    
+    
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -69,30 +91,24 @@ extension ImagesToBeDataTableViewCell {
 
 extension ImagesToBeDataTableViewCell: UIImagePickerControllerDelegate & UINavigationControllerDelegate   {
     @IBAction func addImage(_ sender: Any) {
-        let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = .camera
-        imagePicker.delegate = self
-        self.window?.rootViewController?.present(imagePicker, animated: true, completion: nil)
+//        let imagePicker = UIImagePickerController()
+//        imagePicker.sourceType = .camera
+//        imagePicker.delegate = self
+//        imagePicker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        
+        self.window?.rootViewController?.present(imagePicker!, animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        self.window?.rootViewController?.dismiss(animated: true) {
+        imagePicker?.dismiss(animated: true) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             
             self.imageCollectionView.performBatchUpdates({
             self.images += [image]
             
             }, completion: nil)
-            
-//            self.imageCollectionView.reloadData()
-            
-            
-//            self.imageLabelDictionary[image] = "이구아나"
-            
-//            print(self.imageLabelDictionary)
-            //                let animal = self.predict(image: image)
-            
+
             
         }
     }
