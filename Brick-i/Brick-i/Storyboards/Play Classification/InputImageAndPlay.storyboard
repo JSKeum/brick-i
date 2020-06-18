@@ -158,7 +158,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Brick-i 알려주기" id="p5F-T3-uQ2">
-                        <barButtonItem key="backBarButtonItem" title="back" id="AUO-yD-AnD"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="AUO-yD-AnD"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0Q-mo-xoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

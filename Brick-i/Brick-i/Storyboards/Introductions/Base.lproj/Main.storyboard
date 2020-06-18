@@ -40,7 +40,7 @@
                         <viewLayoutGuide key="safeArea" id="YAn-kg-3Gt"/>
                     </view>
                     <navigationItem key="navigationItem" title="Brick-i" id="EPg-TK-iZe">
-                        <barButtonItem key="backBarButtonItem" title="back" id="Wi8-65-TMt"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Wi8-65-TMt"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ywE-qG-2hu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -85,7 +85,7 @@
                         <viewLayoutGuide key="safeArea" id="bzR-eZ-tFD"/>
                     </view>
                     <navigationItem key="navigationItem" title="Brick-i 알려주기" id="BMl-P1-Bie">
-                        <barButtonItem key="backBarButtonItem" title="back" id="Ge1-Tv-nsq"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ge1-Tv-nsq"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efg-Si-W2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -136,7 +136,7 @@
                         <viewLayoutGuide key="safeArea" id="Yfc-XO-i2z"/>
                     </view>
                     <navigationItem key="navigationItem" title="Brick-i 알려주기" id="MEM-WH-N2e">
-                        <barButtonItem key="backBarButtonItem" title="back" id="O9x-1L-Rdh"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="O9x-1L-Rdh"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNE-fc-FQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -210,7 +210,7 @@
                         <viewLayoutGuide key="safeArea" id="eHu-Qa-PzO"/>
                     </view>
                     <navigationItem key="navigationItem" title="주제 정하기" id="EqF-n2-iGb">
-                        <barButtonItem key="backBarButtonItem" title="back" id="Lb7-cm-TtV"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Lb7-cm-TtV"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5e-3r-KpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
