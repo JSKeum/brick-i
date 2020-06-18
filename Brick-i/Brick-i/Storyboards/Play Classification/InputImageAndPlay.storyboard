@@ -3,59 +3,10 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Input Image View Controller-->
-        <scene sceneID="Z6O-ao-Ne1">
-            <objects>
-                <viewController id="bUs-2s-Esz" customClass="InputImageViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zPy-t8-LzT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjX-k5-Y58">
-                                <rect key="frame" x="181" y="481" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="사진찍기"/>
-                                <connections>
-                                    <action selector="takePhoto:" destination="bUs-2s-Esz" eventType="touchUpInside" id="UNe-8B-0n9"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fq-df-ekf">
-                                <rect key="frame" x="80" y="149" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtl-hP-i5E">
-                                <rect key="frame" x="190" y="558" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Train"/>
-                                <connections>
-                                    <action selector="training:" destination="bUs-2s-Esz" eventType="touchUpInside" id="m5K-Ug-ZQF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGT-qe-pBc">
-                                <rect key="frame" x="88" y="552" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="predict"/>
-                                <connections>
-                                    <action selector="predict:" destination="bUs-2s-Esz" eventType="touchUpInside" id="4aB-hP-ul1"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="SPG-U7-eg0"/>
-                    </view>
-                    <connections>
-                        <outlet property="uploadImageView" destination="4fq-df-ekf" id="cKh-yT-PVF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5HO-yk-lhY" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2450.7246376811595" y="662.94642857142856"/>
-        </scene>
         <!--Brick-i 알려주기-->
         <scene sceneID="WNR-xv-Zw6">
             <objects>
@@ -206,7 +157,9 @@
                             <outlet property="delegate" destination="mND-XP-LBd" id="TIQ-Ta-3BJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Brick-i 알려주기" id="p5F-T3-uQ2"/>
+                    <navigationItem key="navigationItem" title="Brick-i 알려주기" id="p5F-T3-uQ2">
+                        <barButtonItem key="backBarButtonItem" title="back" id="AUO-yD-AnD"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G0Q-mo-xoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

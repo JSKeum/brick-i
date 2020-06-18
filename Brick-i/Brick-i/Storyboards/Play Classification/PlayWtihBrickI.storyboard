@@ -36,11 +36,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UIm-qA-2Fy"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7bp-cM-VMY"/>
+                    <navigationItem key="navigationItem" title="Brick-i랑 게임하기" id="7bp-cM-VMY">
+                        <barButtonItem key="backBarButtonItem" title="back" id="e1q-MZ-NkY"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5U-kF-OdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088" y="2085"/>
+            <point key="canvasLocation" x="1997.1014492753625" y="2084.5982142857142"/>
         </scene>
         <!--Quiz Scene-->
         <scene sceneID="FQM-hs-aUu">
@@ -102,7 +104,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gfn-wV-bAc"/>
                     </view>
-                    <navigationItem key="navigationItem" id="fy1-V3-rTV"/>
+                    <navigationItem key="navigationItem" title="Brick-i랑 게임하기" id="fy1-V3-rTV">
+                        <barButtonItem key="backBarButtonItem" title="back" id="3kw-O6-U9g"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="answerOfBrickI" destination="5tK-C3-aMK" id="N8A-Ee-EgN"/>
                         <outlet property="quizImage" destination="MWG-S2-lcb" id="eGM-PH-P1j"/>
@@ -113,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Q5-mb-TSc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2111.594202898551" y="2008.9285714285713"/>
+            <point key="canvasLocation" x="3021.739130434783" y="2008.9285714285713"/>
         </scene>
         <!--Wrong Result 1-->
         <scene sceneID="acF-j5-EW0">
@@ -139,7 +143,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="no 1"/>
                                 <connections>
-                                    <segue destination="Tm2-ga-Rgt" kind="show" id="YeZ-7E-F7t"/>
+                                    <segue destination="tRW-Ai-lZt" kind="show" id="YeZ-7E-F7t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -154,7 +158,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dm4-W5-Zla"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9v9-zU-ww2"/>
+                    <navigationItem key="navigationItem" title="Brick-i랑 게임하기" id="9v9-zU-ww2">
+                        <barButtonItem key="backBarButtonItem" title="back" id="gZS-qU-dHk"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5an-Zh-9B3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,7 +185,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="no 1"/>
                                         <connections>
-                                            <segue destination="Tm2-ga-Rgt" kind="show" id="wyV-n0-DCM"/>
+                                            <segue destination="tRW-Ai-lZt" kind="show" id="wyV-n0-DCM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl6-bF-jpE">
@@ -238,7 +244,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="no 1"/>
                                 <connections>
-                                    <segue destination="Tm2-ga-Rgt" kind="show" id="rhE-Ck-xRc"/>
+                                    <segue destination="tRW-Ai-lZt" kind="show" id="rhE-Ck-xRc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -251,11 +257,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jTj-mt-ezM"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Esw-fO-985"/>
+                    <navigationItem key="navigationItem" title="Brick-i랑 게임하기" id="Esw-fO-985">
+                        <barButtonItem key="backBarButtonItem" title="back" id="UXR-QD-wzL"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DF-sA-gN1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3241" y="1985"/>
+            <point key="canvasLocation" x="4150.7246376811599" y="1984.8214285714284"/>
         </scene>
         <!--Right Result 2-->
         <scene sceneID="D0e-XF-s3T">
@@ -281,7 +289,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="no 1"/>
                                         <connections>
-                                            <segue destination="Tm2-ga-Rgt" kind="show" id="hRw-Gu-PDh"/>
+                                            <segue destination="tRW-Ai-lZt" kind="show" id="hRw-Gu-PDh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -309,11 +317,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ga-0d-83C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4731.884057971015" y="2068.5267857142858"/>
+            <point key="canvasLocation" x="5642.0289855072469" y="2068.5267857142858"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RVq-SU-3qT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tRW-Ai-lZt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="qqR-8h-khs"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ivk-V3-r3t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tm2-ga-Rgt" kind="relationship" relationship="rootViewController" id="TC7-mC-HNj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bfg-fe-PJB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086.9565217391305" y="2084.5982142857142"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rhE-Ck-xRc"/>
+        <segue reference="wyV-n0-DCM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="back10" width="414" height="896"/>
