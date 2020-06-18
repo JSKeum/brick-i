@@ -99,6 +99,7 @@ class InputImageTableViewController: UITableViewController {
         alert.addTextField()
         let ok = UIAlertAction(title: "추가하기", style: .default) { (ok) in
             self.numOfImageClaases += 1
+        
             self.tableView.reloadData()
         }
         let cancel = UIAlertAction(title: "취소하기", style: .default)

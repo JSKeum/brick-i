@@ -70,7 +70,7 @@ extension ImagesToBeDataTableViewCell {
 extension ImagesToBeDataTableViewCell: UIImagePickerControllerDelegate & UINavigationControllerDelegate   {
     @IBAction func addImage(_ sender: Any) {
         let imagePicker = UIImagePickerController()
-        imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = .camera
         imagePicker.delegate = self
         self.window?.rootViewController?.present(imagePicker, animated: true, completion: nil)
     }
