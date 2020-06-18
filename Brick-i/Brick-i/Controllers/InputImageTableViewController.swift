@@ -23,8 +23,10 @@ class InputImageTableViewController: UITableViewController {
         
     }
     
-    var numOfImageClaases = 3
-    lazy var numOfSections = numOfImageClaases + 1
+    var numOfImageClaases = 1
+    var nameOfGroup: [String] = ["이구아나"]
+    
+    var numOfSections: Int { return numOfImageClaases + 2 }
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -71,14 +73,6 @@ class InputImageTableViewController: UITableViewController {
         else { return 120 }
     }
     
-//    override func tableView(_ tableView: UITableView, titleForHeaderInSection
-//        section: Int) -> String? {
-//        if (section == numOfSections - 1) { return nil }
-//        let numOfInpuImages = 3
-//        return "이구아나 (" + String(numOfInpuImages) + ")"
-//    }
-    
-    // Header height
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if (section == numOfSections - 1) { return 0 }
         return 40
@@ -92,12 +86,28 @@ class InputImageTableViewController: UITableViewController {
         
 //        label.backgroundColor = .white
         let numOfInpuImages = 3
-        label.text = "이구아나 (" + String(numOfInpuImages) + ")"
+        label.text = nameOfGroup[section-1] + "(" + String(numOfInpuImages) + ")"
         
         label.textColor = .white
         return label
     }
    
+    // MARK: - Add New Model Group
+    @IBAction func addNewGroup(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "새로운 동물 추가히기", message: "새로운 동물의 이름을 입력해주세요", preferredStyle: .alert)
+        alert.addTextField()
+        let ok = UIAlertAction(title: "추가하기", style: .default) { (ok) in
+            self.numOfImageClaases += 1
+            self.tableView.reloadData()
+        }
+        let cancel = UIAlertAction(title: "취소하기", style: .default)
+        alert.addAction(cancel)
+        alert.addAction(ok)
+        
+        self.present(alert, animated: true, completion: nil)
+     
+    }
 }
 
 extension InputImageTableViewController {
