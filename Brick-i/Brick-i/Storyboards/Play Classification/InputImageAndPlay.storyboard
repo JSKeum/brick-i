@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bUs-2s-Esz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dk3-fY-7WF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Input Image View Controller-->
         <scene sceneID="Z6O-ao-Ne1">
             <objects>
-                <viewController storyboardIdentifier="InputImage" id="bUs-2s-Esz" customClass="InputImageViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bUs-2s-Esz" customClass="InputImageViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zPy-t8-LzT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +54,154 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5HO-yk-lhY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-286" y="68"/>
+            <point key="canvasLocation" x="2450.7246376811595" y="662.94642857142856"/>
+        </scene>
+        <!--Brick-i 알려주기-->
+        <scene sceneID="WNR-xv-Zw6">
+            <objects>
+                <tableViewController storyboardIdentifier="InputImage" id="mND-XP-LBd" customClass="InputImageTableViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="xZ9-TK-Yri">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="nameOfType" rowHeight="59" id="g7u-u2-MV2" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
+                                <rect key="frame" x="20" y="55.5" width="374" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g7u-u2-MV2" id="el8-pN-u2j">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="동물" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1R-3U-r4H">
+                                            <rect key="frame" x="157.5" y="9" width="59" height="41"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="t1R-3U-r4H" firstAttribute="centerX" secondItem="el8-pN-u2j" secondAttribute="centerX" id="TRa-eQ-fsN"/>
+                                        <constraint firstItem="t1R-3U-r4H" firstAttribute="centerY" secondItem="el8-pN-u2j" secondAttribute="centerY" id="cah-9h-ccb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImagesToBeData" rowHeight="174" id="tgO-19-uBG" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
+                                <rect key="frame" x="20" y="114.5" width="374" height="174"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tgO-19-uBG" id="g8f-rQ-gZB">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="174"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Jfp-Ty-oJX">
+                                            <rect key="frame" x="20" y="11" width="334" height="152"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GXD-0C-ZIp">
+                                                <size key="itemSize" width="128" height="128"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageInput" id="LQb-cv-qSK">
+                                                    <rect key="frame" x="0.0" y="12" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2zU-bC-sbk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </collectionViewCellContentView>
+                                                </collectionViewCell>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="AddImage" id="Vde-n8-Guc">
+                                                    <rect key="frame" x="138" y="12" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hMB-p3-ZYg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dr-GK-iuB">
+                                                                <rect key="frame" x="37" y="42" width="51" height="45"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                <state key="normal" backgroundImage="pencil.circle.fill" catalog="system"/>
+                                                                <connections>
+                                                                    <action selector="addImage:" destination="tgO-19-uBG" eventType="touchUpInside" id="MaX-Hj-HfB"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </collectionViewCellContentView>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Jfp-Ty-oJX" secondAttribute="bottom" id="V2l-Dl-EXB"/>
+                                        <constraint firstItem="Jfp-Ty-oJX" firstAttribute="top" secondItem="g8f-rQ-gZB" secondAttribute="topMargin" id="hdg-BJ-BuL"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Jfp-Ty-oJX" secondAttribute="trailing" id="ibA-fc-XqN"/>
+                                        <constraint firstItem="Jfp-Ty-oJX" firstAttribute="leading" secondItem="g8f-rQ-gZB" secondAttribute="leadingMargin" id="q1w-1a-HRb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageCollectionView" destination="Jfp-Ty-oJX" id="UAV-JO-DWt"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="AddNewImage" rowHeight="59" id="FXw-9y-M2K" customClass="ImagesToBeDataTableViewCell" customModule="Brick_i" customModuleProvider="target">
+                                <rect key="frame" x="20" y="288.5" width="374" height="59"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FXw-9y-M2K" id="lTM-oJ-EAi">
+                                    <rect key="frame" x="0.0" y="0.0" width="330" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gk-kg-gm2">
+                                            <rect key="frame" x="25" y="16" width="112" height="27"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <state key="normal" title="새 동물 추가하기">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="addNewGroup:" destination="mND-XP-LBd" eventType="touchUpInside" id="huw-9m-ajZ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="9Gk-kg-gm2" secondAttribute="bottom" constant="5" id="0UG-Ui-2xU"/>
+                                        <constraint firstItem="9Gk-kg-gm2" firstAttribute="leading" secondItem="lTM-oJ-EAi" secondAttribute="leadingMargin" constant="5" id="Iqh-9A-cXJ"/>
+                                        <constraint firstItem="9Gk-kg-gm2" firstAttribute="top" secondItem="lTM-oJ-EAi" secondAttribute="topMargin" constant="5" id="QcX-g2-iOy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mND-XP-LBd" id="5eN-Jd-06S"/>
+                            <outlet property="delegate" destination="mND-XP-LBd" id="TIQ-Ta-3BJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Brick-i 알려주기" id="p5F-T3-uQ2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G0Q-mo-xoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566.6666666666667" y="59.598214285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2tf-N0-k2E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dk3-fY-7WF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UFQ-kK-EAR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mND-XP-LBd" kind="relationship" relationship="rootViewController" id="MUX-gL-Se2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgA-Xb-zp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656.52173913043487" y="59.598214285714285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>
