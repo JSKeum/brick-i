@@ -40,12 +40,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5U-kF-OdP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="2080"/>
+            <point key="canvasLocation" x="1088" y="2085"/>
         </scene>
         <!--Quiz Scene-->
         <scene sceneID="FQM-hs-aUu">
             <objects>
-                <viewController id="Kiw-tU-vj0" userLabel="Quiz Scene" sceneMemberID="viewController">
+                <viewController id="Kiw-tU-vj0" userLabel="Quiz Scene" customClass="QuizTimeViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3dE-hZ-2yU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,6 +69,20 @@
                                     <segue destination="yLV-SJ-hXn" kind="show" id="AyA-pK-IIX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TI6-6Z-gLV">
+                                <rect key="frame" x="220" y="438" width="10" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5tK-C3-aMK">
+                                <rect key="frame" x="167" y="585" width="145" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -85,10 +99,16 @@
                         <viewLayoutGuide key="safeArea" id="Gfn-wV-bAc"/>
                     </view>
                     <navigationItem key="navigationItem" id="fy1-V3-rTV"/>
+                    <connections>
+                        <outlet property="answerOfBrickI" destination="5tK-C3-aMK" id="N8A-Ee-EgN"/>
+                        <outlet property="rightButton" destination="axL-Wz-Vui" id="xiQ-5N-QKd"/>
+                        <outlet property="timer" destination="TI6-6Z-gLV" id="Ydd-rw-svR"/>
+                        <outlet property="wrongButton" destination="Gg9-hC-8VL" id="6tL-s3-4er"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Q5-mb-TSc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2339.130434782609" y="2083.9285714285716"/>
+            <point key="canvasLocation" x="2111.594202898551" y="2008.9285714285713"/>
         </scene>
         <!--Wrong Result 1-->
         <scene sceneID="acF-j5-EW0">
@@ -206,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DF-sA-gN1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3166.666666666667" y="2079.9107142857142"/>
+            <point key="canvasLocation" x="3241" y="1985"/>
         </scene>
         <!--Right Result 2-->
         <scene sceneID="D0e-XF-s3T">
@@ -245,8 +265,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sR0-p5-kbK"/>
-        <segue reference="YeZ-7E-F7t"/>
+        <segue reference="e3N-OV-BQb"/>
+        <segue reference="rhE-Ck-xRc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="back10" width="414" height="896"/>
