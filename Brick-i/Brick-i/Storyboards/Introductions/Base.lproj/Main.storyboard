@@ -558,7 +558,7 @@
     <resources>
         <image name="animal" width="125" height="120"/>
         <image name="back10" width="414" height="896"/>
-        <image name="back12-1" width="414" height="1111"/>
+        <image name="back12-1" width="414" height="1202"/>
         <image name="back3Theme" width="414" height="896"/>
         <image name="back4" width="414" height="896"/>
         <image name="back5" width="414" height="896"/>

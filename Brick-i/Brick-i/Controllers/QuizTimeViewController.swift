@@ -9,17 +9,30 @@
 import UIKit
 
 class QuizTimeViewController: UIViewController {
-
+    
+    @IBOutlet weak var quizImage: UIImageView!
+    
+    var sampleQuizImages: [UIImage] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         rightButton.isHidden = true
         wrongButton.isHidden = true
         answerOfBrickI.isHidden = false
+        
+        addSampleQuizImages()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        // MARK: - Timer
         
+        let date = Date()
+        let calendar = Calendar.current
+        let minute = calendar.component(.minute, from: date)
+        
+        let num = minute % 2
+        quizImage.image = sampleQuizImages[num]
+        
+        // MARK: - Quiz Timer
         var timeSecond = 4
 //        var i = 0
          Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
@@ -30,10 +43,13 @@ class QuizTimeViewController: UIViewController {
             self.timer.textColor = .black
             self.timer.text = String(timeSecond)
                 
-                if (timeSecond == 0) { self.timer.text = ""
-//                    self.answerOfBrickI.font = UIFont(name: "Courier", size: 16)
+                if (timeSecond == 0) {
+                   
+                    if (num == 0) {
                     self.answerOfBrickI.text = "이구아나! \n제 답이 맞았나요?"
-//
+                    } else if (num == 1) {
+                        self.answerOfBrickI.text = "수달! \n제 답이 맞았나요?"
+                    }
                     self.rightButton.isHidden = false
                     self.wrongButton.isHidden = false
                     
@@ -50,14 +66,12 @@ class QuizTimeViewController: UIViewController {
     @IBOutlet weak var answerOfBrickI: UITextView!
     
     @IBOutlet weak var timer: UILabel! 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+   
+    func addSampleQuizImages() {
+        let iguanaImage = UIImage(named: "sampleIguana"
+        )
+        let elephantImage = UIImage(named: "sampleElephant")
+        sampleQuizImages += [iguanaImage!, elephantImage!]
     }
-    */
 
 }

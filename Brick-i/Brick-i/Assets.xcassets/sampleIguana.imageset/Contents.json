@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "back12-1.png",
+      "filename" : "sampleIguana.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "back12-1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "back12-1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
