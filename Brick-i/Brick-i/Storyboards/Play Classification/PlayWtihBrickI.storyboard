@@ -164,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5an-Zh-9B3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3022" y="3288"/>
+            <point key="canvasLocation" x="2484" y="3288"/>
         </scene>
         <!--Wrong Result 2-->
         <scene sceneID="AVv-ZR-HvK">
@@ -215,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBe-Ir-B06" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5551" y="2943"/>
+            <point key="canvasLocation" x="5642" y="3549"/>
         </scene>
         <!--Right Result 1-->
         <scene sceneID="leA-Na-bDW">
@@ -400,7 +400,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="no"/>
                                 <connections>
-                                    <segue destination="kKP-pY-Iun" kind="show" id="UCw-JD-vPZ"/>
+                                    <segue destination="Uqp-3n-X6U" kind="show" id="G3O-Wp-LJb"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NVP-hc-gw1">
@@ -449,51 +449,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHN-eQ-7HZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7862" y="2085"/>
-        </scene>
-        <!--Wrong Result 1-->
-        <scene sceneID="9AU-eR-E4Q">
-            <objects>
-                <viewController title="Wrong Result 1" id="kKP-pY-Iun" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="W0Z-sl-5aw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back10" translatesAutoresizingMaskIntoConstraints="NO" id="CRD-Wk-HrL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SxR-zY-LNd">
-                                <rect key="frame" x="64" y="777" width="132" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="yes 1"/>
-                                <connections>
-                                    <segue destination="jcO-QY-DuP" kind="show" id="78s-pg-f3S"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtf-Dd-x7l">
-                                <rect key="frame" x="220" y="777" width="132" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="no 1"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="CRD-Wk-HrL" firstAttribute="trailing" secondItem="W0Z-sl-5aw" secondAttribute="trailing" id="5sO-Wk-IWK"/>
-                            <constraint firstItem="CRD-Wk-HrL" firstAttribute="top" secondItem="W0Z-sl-5aw" secondAttribute="top" id="Pj0-90-nmp"/>
-                            <constraint firstAttribute="bottom" secondItem="CRD-Wk-HrL" secondAttribute="bottom" id="XUI-jd-7hY"/>
-                            <constraint firstItem="CRD-Wk-HrL" firstAttribute="leading" secondItem="W0Z-sl-5aw" secondAttribute="leading" id="esc-ZD-WWk"/>
-                            <constraint firstItem="CRD-Wk-HrL" firstAttribute="top" secondItem="W0Z-sl-5aw" secondAttribute="top" id="jlb-en-w9v"/>
-                            <constraint firstAttribute="bottom" secondItem="CRD-Wk-HrL" secondAttribute="bottom" id="sfj-b8-B7U"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="WvW-U2-JWX"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Brick-i랑 게임하기" id="GeL-8P-izK">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="RYA-91-CjI"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SN8-82-1Hq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7907" y="2825"/>
+            <point key="canvasLocation" x="5014" y="2851"/>
         </scene>
         <!--Wrong Result 2-->
         <scene sceneID="9fx-kM-SRm">
@@ -544,11 +500,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mde-4A-VcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9052" y="2852"/>
+            <point key="canvasLocation" x="7407" y="2851"/>
+        </scene>
+        <!--wrong result-->
+        <scene sceneID="PHQ-qa-NKd">
+            <objects>
+                <viewController title="wrong result" id="Uqp-3n-X6U" customClass="ResultOfQuizViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="biC-xc-IJe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back10" translatesAutoresizingMaskIntoConstraints="NO" id="fPz-9L-HNj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agF-8g-JF6">
+                                <rect key="frame" x="64" y="777" width="132" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="yes 1"/>
+                                <connections>
+                                    <segue destination="jcO-QY-DuP" kind="show" id="ssS-Zo-vNn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzX-Kq-vQH">
+                                <rect key="frame" x="220" y="777" width="132" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="no 1"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wpp-7A-krq">
+                                <rect key="frame" x="64" y="274" width="288" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fPz-9L-HNj" firstAttribute="top" secondItem="biC-xc-IJe" secondAttribute="top" id="9XZ-5M-iHE"/>
+                            <constraint firstItem="fPz-9L-HNj" firstAttribute="leading" secondItem="biC-xc-IJe" secondAttribute="leading" id="J9S-P2-dd3"/>
+                            <constraint firstAttribute="bottom" secondItem="fPz-9L-HNj" secondAttribute="bottom" id="XaL-HA-j8V"/>
+                            <constraint firstItem="fPz-9L-HNj" firstAttribute="trailing" secondItem="biC-xc-IJe" secondAttribute="trailing" id="a3d-au-yTS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v3I-OM-Lnj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Brick-i랑 게임하기" id="SLb-VH-9LM">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="hQF-6d-KUT"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="quizImage" destination="wpp-7A-krq" id="BpC-Co-553"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIb-ZD-C5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6155" y="2899"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rhE-Ck-xRc"/>
+        <segue reference="YeZ-7E-F7t"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="back10" width="414" height="896"/>
