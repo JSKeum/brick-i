@@ -27,6 +27,7 @@
 		38BA8A332499E3DE00172F8B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA8A322499E3DE00172F8B /* IntroViewController.swift */; };
 		38BA8A352499F6FA00172F8B /* InputImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA8A342499F6FA00172F8B /* InputImageTableViewController.swift */; };
 		38BA8A382499FD5000172F8B /* ImagesToBeDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38BA8A372499FD5000172F8B /* ImagesToBeDataTableViewCell.swift */; };
+		38FEE57724A19B41007E2140 /* ResultOfQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FEE57624A19B41007E2140 /* ResultOfQuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		38BA8A322499E3DE00172F8B /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		38BA8A342499F6FA00172F8B /* InputImageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputImageTableViewController.swift; sourceTree = "<group>"; };
 		38BA8A372499FD5000172F8B /* ImagesToBeDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesToBeDataTableViewCell.swift; sourceTree = "<group>"; };
+		38FEE57624A19B41007E2140 /* ResultOfQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultOfQuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 				38BA8A342499F6FA00172F8B /* InputImageTableViewController.swift */,
 				3846DC3C249B713400CCD6B6 /* StartPlayViewController.swift */,
 				38470DFA249B9F5B00E5EEC9 /* QuizTimeViewController.swift */,
+				38FEE57624A19B41007E2140 /* ResultOfQuizViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			files = (
 				38BA8A332499E3DE00172F8B /* IntroViewController.swift in Sources */,
 				3842E68624929E11008FEA53 /* KeumKNN+ImageConstraint.swift in Sources */,
+				38FEE57724A19B41007E2140 /* ResultOfQuizViewController.swift in Sources */,
 				3842E6882492A057008FEA53 /* ModelUpdater.swift in Sources */,
 				3842E6832492735D008FEA53 /* Predict.swift in Sources */,
 				38BA8A382499FD5000172F8B /* ImagesToBeDataTableViewCell.swift in Sources */,

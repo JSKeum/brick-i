@@ -220,7 +220,7 @@
         <!--Right Result 1-->
         <scene sceneID="leA-Na-bDW">
             <objects>
-                <viewController title="Right Result 1" id="qmB-lw-xQy" sceneMemberID="viewController">
+                <viewController title="Right Result 1" id="qmB-lw-xQy" customClass="ResultOfQuizViewController" customModule="Brick_i" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4B-uZ-l0t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,6 +244,10 @@
                                     <segue destination="tRW-Ai-lZt" kind="show" id="rhE-Ck-xRc"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o0z-JL-tou">
+                                <rect key="frame" x="64" y="274" width="288" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -257,6 +261,9 @@
                     <navigationItem key="navigationItem" title="Brick-i랑 게임하기" id="Esw-fO-985">
                         <barButtonItem key="backBarButtonItem" title="Back" id="UXR-QD-wzL"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="quizImage" destination="o0z-JL-tou" id="hBs-xP-PTm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DF-sA-gN1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
